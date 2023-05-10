@@ -89,3 +89,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     border: 2px solid #22D4FD; /*largura da borda / solid = borda solida / cor da borda*/
 
 }
+
+.apresentacao__links__link:hover{
+    background-color: #272727;
+}
