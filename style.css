@@ -74,6 +74,9 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 .apresentacao__links__link{
     /*background-color: #22D4FD;/*cor de fundo*/
+    display: flex;/*Flexbox*/
+    justify-content: center;
+    gap:16px;
     width: 380px;/*largura do elemento*/
     text-align: center;/*Alinhamento do texto dentro do elemento*/
     border-radius: 8px;
@@ -84,6 +87,5 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #22D4FD; /*largura da borda / solid = borda solida / cor da borda*/
-
 
 }
