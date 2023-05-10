@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{  /*Isso é um seletor*/
+    height: 100vh; /*vh - ViewHeight - ou seja, 100%v da nossa altura. vh será nossa unideda de medida*/
+    box-sizing: border-box; /*essa propriedade define que todo elemento filho não ultrapasse sa largura do body*/
+    /*Existem dois valores possíveis para a propriedade "box-sizing":
+"content-box": este é o valor padrão. Quando o "box-sizing" é definido como "content-box", a largura e a altura do elemento incluem apenas o conteúdo, excluindo qualquer preenchimento (padding) e borda (border) adicionais.
+
+"border-box": Quando o "box-sizing" é definido como "border-box", a largura e a altura do elemento incluem o conteúdo, o preenchimento (padding) e a borda (border), tudo junto.*/
+    background-color: #000000; /*cor do fundo*/
+    color: #F6F6F6;/*Cor da fonte*/
+
+}
+/*Porem quando usamos seletores universair (Body, Strongf, h1, etc. altera em todo o documento!
+Isso não é legal....
+Para resolver esse problema usamos "Classes" dentro dos seletores*/
+/*https://www.w3schools.com/cssref/sel_class.php*/
+
+.titulo-destaque{
+    color: #22D4FD;
+}
+
+.apresentacao{
+    margin:10% 15%;
+    display: flex; /*A propriedade "display: flex" é usada para criar um contêiner flexível em CSS. Quando aplicada a um elemento HTML, ela transforma esse elemento em um contêiner flexível que pode conter um ou mais elementos filhos (também conhecidos como itens flexíveis).*/
+    align-items: center;  /*A propriedade "align-items" define o alinhamento dos itens flexíveis ao longo do eixo transversal do contêiner, que é perpendicular ao eixo principal. Ou seja, se a direção principal do contêiner é horizontal, o eixo transversal é vertical, e vice-versa.*/
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;/*define a largura*/
+    height: 546px;/*define a altura*/
+    display: flex;/*Coloca dotos os conteudos em flexbox*/
+    flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
+    gap: 40px; /*espaçamento entre os elementos do flexbox*/
+    /**Gap - A propriedade gap não é exclusiva do Flexbox, porém é utilizada quase sempre em conjunto com ele. Ela especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid*/
+
+}
+
+.apresentacao__titulo{
+    font-size:36px;/*Tamanho da fonte*/
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo_texto{
+    font-size:24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.apresentacao__conteudo_assinatura{
+    font-size:24px;
+    font-family: 'Krona One', sans-serif;
+    color: #22D4FD;/*cor da fonte*/
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;/*Coloca a posição dos itens no centro*/
+    gap: 32px;/*coloca um espaço entre os itens*/
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link{
+    /*background-color: #22D4FD;/*cor de fundo*/
+    width: 380px;/*largura do elemento*/
+    text-align: center;/*Alinhamento do texto dentro do elemento*/
+    border-radius: 8px;
+    font-size: 24px;/*tamanho da fonte*/
+    font-weight: 600;/*peso da fonte*/
+    padding: 21.5px 0;/*horizontal / vertical*/
+    text-decoration: none;/*retira a formatação padrão*/
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #22D4FD; /*largura da borda / solid = borda solida / cor da borda*/
+
+
+}
