@@ -5,7 +5,7 @@
 }
 
 body{  /*Isso é um seletor*/
-    height: 100vh; /*vh - ViewHeight - ou seja, 100%v da nossa altura. vh será nossa unideda de medida*/
+    /* height: 100vh; vh - ViewHeight - ou seja, 100%v da nossa altura. vh será nossa unideda de medida */
     box-sizing: border-box; /*essa propriedade define que todo elemento filho não ultrapasse sa largura do body*/
     /*Existem dois valores possíveis para a propriedade "box-sizing":
 "content-box": este é o valor padrão. Quando o "box-sizing" é definido como "content-box", a largura e a altura do elemento incluem apenas o conteúdo, excluindo qualquer preenchimento (padding) e borda (border) adicionais.
@@ -15,17 +15,32 @@ body{  /*Isso é um seletor*/
     color: #F6F6F6;/*Cor da fonte*/
 
 }
+
 /*Porem quando usamos seletores universair (Body, Strongf, h1, etc. altera em todo o documento!
 Isso não é legal....
 Para resolver esse problema usamos "Classes" dentro dos seletores*/
 /*https://www.w3schools.com/cssref/sel_class.php*/
 
-.titulo-destaque{
-    color: #22D4FD;
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600; /*font-weight é o peso da fonte*/
+    color:#22D4FD;
+
 }
 
 .apresentacao{
-    margin:10% 15%;
+    padding: 5% 15%;
+    /* margin:10% 15%; */
     display: flex; /*A propriedade "display: flex" é usada para criar um contêiner flexível em CSS. Quando aplicada a um elemento HTML, ela transforma esse elemento em um contêiner flexível que pode conter um ou mais elementos filhos (também conhecidos como itens flexíveis).*/
     align-items: center;  /*A propriedade "align-items" define o alinhamento dos itens flexíveis ao longo do eixo transversal do contêiner, que é perpendicular ao eixo principal. Ou seja, se a direção principal do contêiner é horizontal, o eixo transversal é vertical, e vice-versa.*/
     justify-content: space-between;
@@ -46,6 +61,10 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     font-family: 'Krona One', sans-serif;
 }
 
+.titulo-destaque{
+    color: #22D4FD;
+}
+
 .apresentacao__conteudo_texto{
     font-size:24px;
     font-family: 'Montserrat', sans-serif;
@@ -57,6 +76,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     font-family: 'Krona One', sans-serif;
     color: #22D4FD;/*cor da fonte*/
 }
+
 
 .apresentacao__links{
     display: flex;
@@ -92,4 +112,16 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 .apresentacao__links__link:hover{
     background-color: #272727;
+}
+
+.rodape{
+    color: #000000;
+    background-color: #22D4FD;
+    /*margin:28px; /*Margem é da borda para fora*/
+    padding: 28px; /*padding é da borda para dentro até o conteúdo*/
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
 }
