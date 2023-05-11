@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-houver:#42423b;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +17,9 @@ body{  /*Isso é um seletor*/
     box-sizing: border-box; /*essa propriedade define que todo elemento filho não ultrapasse sa largura do body*/
     /*Existem dois valores possíveis para a propriedade "box-sizing":
 "content-box": este é o valor padrão. Quando o "box-sizing" é definido como "content-box", a largura e a altura do elemento incluem apenas o conteúdo, excluindo qualquer preenchimento (padding) e borda (border) adicionais.
-
 "border-box": Quando o "box-sizing" é definido como "border-box", a largura e a altura do elemento incluem o conteúdo, o preenchimento (padding) e a borda (border), tudo junto.*/
-    background-color: #000000; /*cor do fundo*/
-    color: #F6F6F6;/*Cor da fonte*/
+    background-color: var(--cor-primaria); /*cor do fundo*/
+    color: var(--cor-secundaria);/*Cor da fonte*/
 
 }
 
@@ -34,7 +41,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600; /*font-weight é o peso da fonte*/
-    color:#22D4FD;
+    color:var(--cor-terciaria);
     text-decoration: none;
 
 }
@@ -47,9 +54,10 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     justify-content: space-between;
 }
 
+
 .apresentacao__conteudo{
     width: 615px;/*define a largura*/
-    height: 546px;/*define a altura*/
+    /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
     gap: 40px; /*espaçamento entre os elementos do flexbox*/
@@ -57,25 +65,57 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 }
 
-.apresentacao__titulo{
+.apresentacao__conteudo__curriculo{
+    width: 80%;/*define a largura*/
+    /*height: 546px;/*define a altura*/
+    display: flex;/*Coloca dotos os conteudos em flexbox*/
+    flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
+    gap: 40px; /*espaçamento entre os elementos do flexbox*/
+    /**Gap - A propriedade gap não é exclusiva do Flexbox, porém é utilizada quase sempre em conjunto com ele. Ela especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid*/
+
+}
+
+.apresentacao__curriculo { /* Main Curriculo*/
+    padding: 5% 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.imagem {
+    width: 10%;
+}
+.contato{
+    display: flex;
+    gap: 50px;
+}
+
+.apresentacao__conteudo__titulo{
     font-size:36px;/*Tamanho da fonte*/
     font-family: 'Krona One', sans-serif;
 }
 
 .titulo-destaque{
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo_texto{
     font-size:24px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+
+}
+
+
+.apresentacao__conteudo_texto a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo_assinatura{
     font-size:24px;
     font-family: 'Krona One', sans-serif;
-    color: #22D4FD;/*cor da fonte*/
+    color: var(--cor-terciaria);/*cor da fonte*/
 }
 
 
@@ -105,20 +145,25 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     font-weight: 600;/*peso da fonte*/
     padding: 21.5px 0;/*horizontal / vertical*/
     text-decoration: none;/*retira a formatação padrão*/
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD; /*largura da borda / solid = borda solida / cor da borda*/
+    border: 2px solid var(--cor-terciaria); /*largura da borda / solid = borda solida / cor da borda*/
 
 }
 
 .apresentacao__links__link:hover{
-    background-color: #272727;
+    background-color: var(--cor-houver);
+}
+
+.imprimir{
+    margin: 0 120% ;
+    width: 3%;
 }
 
 .rodape{
-    color: #000000;
-    background-color: #22D4FD;
-    /*margin:28px; /*Margem é da borda para fora*/
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    /*margin:10% 0; /*Margem é da borda para fora*/
     padding: 28px; /*padding é da borda para dentro até o conteúdo*/
     text-align: center;
     font-family: 'Montserrat', sans-serif;
