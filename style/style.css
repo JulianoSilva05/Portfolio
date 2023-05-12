@@ -191,7 +191,13 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     }
 
     .apresentacao {
+        padding: 5%;
         flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;/*auto ocupa o espaço do padding - */
+        
     }
 
 
