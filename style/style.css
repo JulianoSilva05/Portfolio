@@ -53,7 +53,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     padding: 5% 15%;
     /* margin:10% 15%; */
     display: flex; /*A propriedade "display: flex" é usada para criar um contêiner flexível em CSS. Quando aplicada a um elemento HTML, ela transforma esse elemento em um contêiner flexível que pode conter um ou mais elementos filhos (também conhecidos como itens flexíveis).*/
-    align-items: center;  /*A propriedade "align-items" define o alinhamento dos itens flexíveis ao longo do eixo transversal do contêiner, que é perpendicular ao eixo principal. Ou seja, se a direção principal do contêiner é horizontal, o eixo transversal é vertical, e vice-versa.*/
+    align-items: flex-start;  /*A propriedade "align-items" define o alinhamento dos itens flexíveis ao longo do eixo transversal do contêiner, que é perpendicular ao eixo principal. Ou seja, se a direção principal do contêiner é horizontal, o eixo transversal é vertical, e vice-versa.*/
     justify-content: space-between;
     gap:82px;
 }
