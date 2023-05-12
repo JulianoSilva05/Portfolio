@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root{
+:root{/*Pseudo classe - global*/
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #22D4FD;
     --cor-houver:#42423b;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-segundaria: 'Montserrat', sans-serif;
 }
 
 *{
@@ -38,8 +41,8 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .cabecalho__menu__link{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
     font-weight: 600; /*font-weight é o peso da fonte*/
     color:var(--cor-terciaria);
     text-decoration: none;
@@ -52,11 +55,12 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     display: flex; /*A propriedade "display: flex" é usada para criar um contêiner flexível em CSS. Quando aplicada a um elemento HTML, ela transforma esse elemento em um contêiner flexível que pode conter um ou mais elementos filhos (também conhecidos como itens flexíveis).*/
     align-items: center;  /*A propriedade "align-items" define o alinhamento dos itens flexíveis ao longo do eixo transversal do contêiner, que é perpendicular ao eixo principal. Ou seja, se a direção principal do contêiner é horizontal, o eixo transversal é vertical, e vice-versa.*/
     justify-content: space-between;
+    gap:82px;
 }
 
 
 .apresentacao__conteudo{
-    width: 615px;/*define a largura*/
+    width: 50%;/*define a largura*/
     /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
@@ -66,7 +70,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo__curriculo{
-    width: 80%;/*define a largura*/
+    width: 790px;/*define a largura*/
     /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
@@ -91,8 +95,8 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo__titulo{
-    font-size:36px;/*Tamanho da fonte*/
-    font-family: 'Krona One', sans-serif;
+    font-size:2.25rem;/*Tamanho da fonte*/
+    font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque{
@@ -100,8 +104,8 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo_texto{
-    font-size:24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    font-family: var(--fonte-segundaria);
     text-align: justify;
 
 }
@@ -113,8 +117,8 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo_assinatura{
-    font-size:24px;
-    font-family: 'Krona One', sans-serif;
+    font-size:1.5rem;
+    font-family: var(--fonte-primaria);
     color: var(--cor-terciaria);/*cor da fonte*/
 }
 
@@ -128,25 +132,25 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__links__subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     /*background-color: #22D4FD;/*cor de fundo*/
     display: flex;/*Flexbox*/
     justify-content: center;
     gap:16px;
-    width: 380px;/*largura do elemento*/
+    width: 50%;/*largura do elemento*/
     text-align: center;/*Alinhamento do texto dentro do elemento*/
     border-radius: 8px;
-    font-size: 24px;/*tamanho da fonte*/
+    font-size: 1.5rem;/*tamanho da fonte*/
     font-weight: 600;/*peso da fonte*/
     padding: 21.5px 0;/*horizontal / vertical*/
     text-decoration: none;/*retira a formatação padrão*/
     color: var(--cor-secundaria);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-segundaria);
     border: 2px solid var(--cor-terciaria); /*largura da borda / solid = borda solida / cor da borda*/
 
 }
@@ -156,18 +160,27 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .imprimir{
-    margin: 0 120% ;
+    margin: 0 150% ;
     width: 3%;
 }
 
+.apresentacao__imagem{
+    width: 50%;
+}
 .rodape{
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     /*margin:10% 0; /*Margem é da borda para fora*/
     padding: 28px; /*padding é da borda para dentro até o conteúdo*/
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: var(--fonte-segundaria);
+    font-size: 1.5rem;
     font-weight: 400;
 
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
