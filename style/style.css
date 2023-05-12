@@ -194,6 +194,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     }
 
     .apresentacao {
+        align-items: center;
         padding: 5%;
         flex-direction: column-reverse;
     }
