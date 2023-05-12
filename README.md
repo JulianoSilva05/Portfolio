@@ -1,5 +1,3 @@
-```
-
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
 ![image](#)
@@ -17,5 +15,3 @@
 ### Juliano Silva
 
 ### Linkedin: https://www.linkedin.com/in/julianogti/
-
-```
