@@ -1,8 +1,6 @@
-```
-
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
-![image](#)
+![image](https://raw.githubusercontent.com/JulianoSilva05/Portfolio/main/projeto_inicial.png)
 
 ## Ferramentas utilizadas:
 
@@ -17,5 +15,3 @@
 ### Juliano Silva
 
 ### Linkedin: https://www.linkedin.com/in/julianogti/
-
-```
