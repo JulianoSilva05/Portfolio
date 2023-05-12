@@ -60,7 +60,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 
 .apresentacao__conteudo{
-    width: 50%;/*define a largura*/
+    width: 60%;/*define a largura*/
     /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
@@ -70,7 +70,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo__curriculo{
-    width: 790px;/*define a largura*/
+    width: 80%;/*define a largura*/
     /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
