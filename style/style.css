@@ -60,7 +60,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 
 .apresentacao__conteudo{
-    width: 50%;/*define a largura*/
+    width: 80%;/*define a largura*/
     /*height: 546px;/*define a altura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
@@ -70,8 +70,10 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .apresentacao__conteudo__curriculo{
+
     width: 50%;/*define a largura*/
     /*height: 546px;/*define a altura*/
+    width: 80%;/*define a largura*/
     display: flex;/*Coloca dotos os conteudos em flexbox*/
     flex-direction: column;/*define a direção do flexbox para colunas (por padrão, o flexboxz vem como row(linhas)*/
     gap: 40px; /*espaçamento entre os elementos do flexbox*/
@@ -85,7 +87,6 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     align-items: flex-start;
     justify-content: space-between;
 }
-
 .imagem {
     width: 10%;
 }
@@ -160,12 +161,14 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 }
 
 .imprimir{
-    margin: 0 150% ;
-    width: 3%;
+    margin: 0 100% ;
+    width: 5%;
 }
 
 .apresentacao__imagem{
     width: 50%;
+    width: 40%;
+    align-items: flex-start;
 
 }
 .rodape{
