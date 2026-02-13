@@ -110,6 +110,15 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 }
 
+.apresentacao__conteudo_texto ul{
+    margin-left: 1.5rem;
+}
+
+.apresentacao__conteudo_texto ul ul{
+    margin-left: 2.5rem;
+    list-style-type: circle;
+}
+
 
 .apresentacao__conteudo_texto a{
     text-decoration: none;
@@ -141,6 +150,7 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
     /*background-color: #22D4FD;/*cor de fundo*/
     display: flex;/*Flexbox*/
     justify-content: center;
+    align-items: center;
     gap:16px;
     width: 50%;/*largura do elemento*/
     text-align: center;/*Alinhamento do texto dentro do elemento*/
@@ -155,10 +165,14 @@ Para resolver esse problema usamos "Classes" dentro dos seletores*/
 
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-houver);
 }
 
+.apresentacao__links__navegacao img{
+    width: 24px;
+    height: 24px;
+}
 .imprimir{
     margin: 0 100% ;
     width: 5%;
